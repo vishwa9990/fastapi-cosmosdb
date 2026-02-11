@@ -1,0 +1,5 @@
+﻿fastapi
+uvicorn
+azure-cosmos
+pydantic
+python-dotenv

@@ -1,19 +1,16 @@
-# fastapi-cosmosdb
-FastAPI + Azure Cosmos DB (Async) Demo
+﻿# FastAPI + Azure Cosmos Async Demo
 
-This project demonstrates:
-Async integration of Azure Cosmos DB using azure.cosmos.aio
-Proper FastAPI lifecycle management
-Non-blocking I/O operations
-Concurrency using asyncio.gather
-Clean service-layer architecture
+This project demonstrates how to integrate Azure Cosmos DB asynchronously with FastAPI using the zure.cosmos.aio SDK.
 
-Key Concepts Demonstrated:
-Async Database Client
-Cosmos async SDK is used to avoid blocking the event loop.
-Connection Lifecycle
-Cosmos client is initialized during startup and reused across requests.
-Concurrent I/O Operations
-The /items/batch endpoint demonstrates how multiple Cosmos queries can be executed concurrently using asyncio.gather.
-Scalable Architecture
-Designed to handle high-concurrency workloads efficiently.
+## Features
+
+- Async Cosmos DB client
+- Proper FastAPI startup/shutdown lifecycle
+- Service layer architecture
+- Non-blocking I/O operations
+- Concurrency using syncio.gather
+- Batch endpoint to demonstrate parallel database reads
+
+## Run
+
+uvicorn app.main:app --reload
